@@ -11,8 +11,8 @@ const About = () => {
       <div className="about-content">
         <div className="about-content-left">
           <h3>
-            I'm <span className="color-orange">Joseph Kulundu,</span> a Data
-            Scientist, ITSM Specialist, and Tech Enthusiast
+            I'm <span className="color-orange">Joseph Kulundu,</span> <span className="md-none">a Data
+            Scientist, ITSM Specialist, and Tech Enthusiast</span>
           </h3>
           <p>
             I leverage my expertise in data science to unlock insights and drive

@@ -14,7 +14,7 @@
   
   .about-header-below {
     font-size: 8.25rem;
-    color: rgb(222, 227, 228) !important;
+    color: rgb(202, 204, 204) !important;
     position: absolute;
     top: -50px;
     left: 50%;
@@ -175,6 +175,10 @@
   .about-container {
     padding: 80px 20px;
     width: 80%;
+  }
+
+  .md-none{
+    display: none;
   }
 
   .about-header-below {

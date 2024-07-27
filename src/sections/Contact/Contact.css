@@ -15,7 +15,7 @@
   
   .contact-header-below {
     font-size: 8.25rem;
-    color: rgba(222, 227, 228, 0.921);
+    color: rgb(202, 204, 204) !important;
     position: absolute;
     top: -65px;
     left: 50%;
