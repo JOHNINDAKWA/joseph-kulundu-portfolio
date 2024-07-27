@@ -17,7 +17,7 @@
   padding: 20px;
   border-radius: 8px;
   max-width: 600px;
-  width: 100%;
+  width: 90%;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -115,4 +115,53 @@
 
 .socil-icons svg:hover {
   color: #111418;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .modal-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .modal-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .modal-content p,
+  .modal-content a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .modal-content h2 {
+    font-size: 1.1rem;
+  }
+
+  .modal-content h3 {
+    font-size: 1rem;
+  }
+
+  .modal-content p,
+  .modal-content a {
+    font-size: 0.8rem;
+  }
+
+  .modal-close {
+    font-size: 20px;
+  }
+
+  .socil-icons svg {
+    font-size: 20px;
+  }
 }

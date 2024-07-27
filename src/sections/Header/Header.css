@@ -93,32 +93,60 @@
   }
 
   .buttons {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 1rem; /* Adjust gap between buttons */
+    flex-direction: column; 
+    gap: 1rem; 
   }
 }
 
 /* Media Query for Small Screens (Mobile) */
 @media (max-width: 480px) {
   .header {
-    height: 70vh; /* Further adjust height for very small screens */
+    height: 70vh; 
   }
 
   .overlay p {
-    font-size: 0.875rem; /* Reduce font size further */
+    font-size: 0.875rem; 
   }
 
   .overlay h4 {
-    font-size: 1.25rem; /* Further adjust heading size */
+    font-size: 1.25rem; 
   }
 
   h1 {
-    font-size: 2rem; /* Further reduce font size */
+    font-size: 2rem;
   }
 
   .buttons {
-    width: 100%; /* Make buttons full width */
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 0.5rem; /* Reduce gap between buttons */
+    width: 100%; 
+    flex-direction: column;
+    gap: 0.5rem; 
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  .header {
+    background-position: center right;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    background-position: center right;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-size: cover;
+    background-position: center right;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    background-size: cover;
+    background-position: center right;
   }
 }
