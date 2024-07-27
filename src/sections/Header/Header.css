@@ -2,6 +2,7 @@
     height: 100vh;
     background: url('../../images/pic5.jpg') no-repeat center center/cover;
     position: relative;
+    overflow: hidden;
   }
   
   .overlay {
@@ -127,26 +128,26 @@
 
 @media (max-width: 1200px) {
   .header {
-    background-position: center right;
+    background-position: center;
   }
 }
 
 @media (max-width: 992px) {
   .header {
-    background-position: center right;
+    background-position: center center;
   }
 }
 
 @media (max-width: 768px) {
   .header {
     background-size: cover;
-    background-position: center right;
+    background-position: center center;
   }
 }
 
 @media (max-width: 576px) {
   .header {
     background-size: cover;
-    background-position: center right;
+    background-position: center center;
   }
 }
