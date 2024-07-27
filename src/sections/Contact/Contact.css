@@ -1,0 +1,256 @@
+.contact-container {
+    padding: 100px 200px; 
+    background: #fff;
+    margin-top: 2rem;
+    text-align: center;
+
+  }
+  
+  
+  
+  .contact-header {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .contact-header-below {
+    font-size: 8.25rem;
+    color: rgba(222, 227, 228, 0.921);
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    white-space: nowrap;
+    line-height: 1.3;
+    opacity: 0.4;
+    font-weight: 600;
+  }
+  
+  .contact-header-top {
+    color: #111418;
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-header-top::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ffc107;
+    margin: 10px auto; 
+  }
+
+
+
+  .contact-desc {
+    padding: 50px;
+    color: #6c757d;
+    width: 50%;
+    margin: auto;
+  }
+
+
+  .contact-desc p{
+    text-align: center;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  .contact-details-left {
+    max-width: 500px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 1.2rem;
+
+  }
+  
+  .contact-item svg {
+    font-size: 2.5rem;
+    color: #ffc107;
+    margin-right: 10px;
+  }
+  
+  .contact-specific-det {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact-specific-det p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contact-specific-det span {
+    margin-top: 5px;
+    color: #6c757d;
+  }
+  
+  .contact-details-right {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .contact-details-right input,
+  .contact-details-right textarea {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 15px;
+    border: 1px dotted #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-details-right textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  .contact-details-right button {
+    width: 100%;
+    color: #cb9900;
+    margin: auto;
+    padding: 1rem 2.8rem;
+
+  }
+  
+  .contact-details-right button:hover {
+    color: #000;
+  }
+  
+
+  /* Media Queries */
+@media (max-width: 1024px) {
+  .contact-container {
+    padding: 100px 50px;
+  }
+
+  .contact-header-below {
+    font-size: 5.25rem;
+    top: -45px;
+  }
+
+  .contact-header-top {
+    font-size: 1.75rem;
+  }
+
+  .contact-header-top::after {
+    width: 60px;
+    height: 3px;
+  }
+
+  .contact-desc {
+    width: 70%;
+    padding: 30px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-details-left, .contact-details-right {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 60px 20px;
+  }
+
+  .contact-header-below {
+    font-size: 4rem;
+    top: -35px;
+  }
+
+  .contact-header-top {
+    font-size: 1.5rem;
+  }
+
+  .contact-header-top::after {
+    width: 50px;
+    height: 2px;
+  }
+
+  .contact-desc {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .contact-details-left, .contact-details-right {
+    width: 90%;
+  }
+
+  .contact-item {
+    margin-bottom: 15px;
+    gap: 1rem;
+  }
+
+  .contact-item svg {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 40px 10px;
+  }
+
+  .contact-header-below {
+    font-size: 3rem;
+    top: -30px;
+  }
+
+  .contact-header-top {
+    font-size: 1.25rem;
+  }
+
+  .contact-header-top::after {
+    width: 40px;
+    height: 2px;
+  }
+
+  .contact-desc {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .contact-details-left, .contact-details-right {
+    width: 100%;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-specific-det {
+    align-items: center;
+  }
+
+  .contact-details-right input, .contact-details-right textarea, .contact-details-right button {
+    width: 90%;
+    padding: 12px;
+  }
+
+  .contact-details-right textarea {
+    height: 100px;
+  }
+}

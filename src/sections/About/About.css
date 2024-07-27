@@ -1,0 +1,273 @@
+.about-container {
+    padding: 20px;
+    width: 100% - 260px;
+    padding: 100px 100px;
+    margin: 0 auto;
+    
+  }
+  
+  .about-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-header-below {
+    font-size: 8.25rem;
+    color: rgb(222, 227, 228) !important;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    white-space: nowrap;
+    line-height: 1.3;
+    opacity: 0.4;
+    font-weight: 600 !important;
+
+  }
+  
+  .about-header-top {
+    color: #111418;
+    position: relative;
+    z-index: 2;
+    font-weight: 600 !important;
+    font-size: 2.25rem !important;
+    margin-bottom: 1rem; 
+  }
+  
+  .about-header-top::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ffc107;
+    margin: 0 auto; 
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    flex-wrap: wrap;
+  }
+  
+  .about-content-left {
+    width: 60%;
+  }
+  
+  .about-content-left h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+  }
+  
+  .about-content-left p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 1.8;   
+    opacity: 0.9;
+    margin-bottom: 1rem;
+  }
+  
+
+  .about-content-right .btn{
+    padding: 16px 18px;
+    width: 100%;
+    color: #000;
+  }
+
+
+  .detailed-details{
+    margin-bottom: 20px;
+  }
+  
+  .detailed-details p {
+    margin-bottom: 10px;
+    opacity: 0.9;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(222, 227, 228);
+  }
+  
+  .detailed-details p:last-child {
+    border-bottom: none;
+  }
+  
+  .color-orange {
+    color: #ffc107;
+  }
+  
+  .about-bottom {
+    padding-top: 20px;
+  }
+  
+
+  
+
+  
+  .about-bottom h1 {
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-size: 3rem !important;
+    color: #6c757d ;
+  }
+  
+  .about-bottom p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+
+
+
+  .about-bottom ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+  }
+  
+  .about-bottom li {
+    text-align: center;
+    position: relative; 
+  }
+  
+  .about-bottom li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50%; 
+    height: 100%;
+    border-right: 1px solid #4c4d4d34;
+  }
+
+
+    /* Media Queries */
+@media (max-width: 1400px) {
+  .about-bottom{
+    display: none !important;
+  }
+}
+
+
+
+  /* Media Queries */
+@media (max-width: 1024px) {
+  .about-container {
+    padding: 80px 20px;
+  }
+
+  .about-header-below {
+    font-size: 5.25rem;
+    top: -45px;
+  }
+
+  .about-header-top {
+    font-size: 1.75rem;
+  }
+
+  .about-header-top::after {
+    width: 60px;
+    height: 3px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    width: 80%;
+    padding: 50px 50px;
+  }
+
+  .about-content-left, .about-content-right {
+    width: 100%;
+  }
+
+
+  .about-bottom{
+    display: none;
+  }
+
+
+
+
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 60px 10px;
+  }
+
+  .about-header-below {
+    font-size: 4rem;
+    top: -35px;
+  }
+
+  .about-header-top {
+    font-size: 1.5rem;
+  }
+
+  .about-header-top::after {
+    width: 50px;
+    height: 2px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-left: 0;
+  }
+
+  .about-content-left, .about-content-right {
+    width: 100%;
+  }
+
+  .about-bottom{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 40px 10px;
+  }
+
+  .about-header-below {
+    font-size: 3rem;
+    top: -30px;
+  }
+
+  .about-header-top {
+    font-size: 1.25rem;
+  }
+
+  .about-header-top::after {
+    width: 40px;
+    height: 2px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-left: 0;
+  }
+
+  .about-content-left, .about-content-right {
+    width: 100%;
+  }
+
+
+
+  .about-bottom{
+    display: none;
+  }
+}

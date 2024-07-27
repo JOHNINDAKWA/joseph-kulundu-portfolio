@@ -1,0 +1,261 @@
+.portfolio-container {
+  padding: 100px 200px; 
+  background: #f8f9fa;
+  margin-top: 2rem;
+}
+
+
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.portfolio-header-below {
+  font-size: 8.25rem;
+  color: rgba(222, 227, 228, 0.921);
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  white-space: nowrap;
+  line-height: 1.3;
+  opacity: 0.4;
+  font-weight: 600;
+}
+
+.portfolio-header-top {
+  color: #111418;
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-header-top::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #ffc107;
+  margin: 10px auto; 
+}
+
+.portfolio-two{
+  margin: 100px 0;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.portfolio-item {
+  background: #f8f9fa;
+  padding: 0;
+  width: calc(33% - 20px);
+  box-sizing: border-box;
+  text-align: start;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 4px none black;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.portfolio-item-details {
+  padding: 0 20px 20px;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 2px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-item h3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.portfolio-item p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.portfolio-item button {
+  color: #ffc107;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 400;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  transition: color 0.3s ease;
+}
+
+.portfolio-item button::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.portfolio-item button:hover {
+  color: #111418;
+}
+
+.portfolio-item button:hover::after {
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .portfolio-container {
+    padding: 100px 50px; 
+  }
+
+  .portfolio-header-below {
+    font-size: 5.25rem;
+    top: -45px;
+  }
+
+  .portfolio-header-top {
+    font-size: 1.75rem;
+  }
+
+  .portfolio-header-top::after {
+    width: 60px;
+    height: 3px;
+  }
+
+  .portfolio-item {
+    width: calc(50% - 20px);
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .portfolio-container {
+    padding: 100px 50px; 
+  }
+
+  .portfolio-header-below {
+    font-size: 5.25rem;
+    top: -45px;
+  }
+
+  .portfolio-header-top {
+    font-size: 1.75rem;
+  }
+
+  .portfolio-header-top::after {
+    width: 60px;
+    height: 3px;
+  }
+
+  .portfolio-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    padding: 60px 20px;
+  }
+
+  .portfolio-header-below {
+    font-size: 4rem;
+    top: -35px;
+  }
+
+  .portfolio-header-top {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-header-top::after {
+    width: 50px;
+    height: 2px;
+  }
+
+  .portfolio-item {
+    width: calc(50% - 20px);
+  }
+
+  .portfolio-item h3 {
+    font-size: 18px;
+  }
+
+  .portfolio-item p {
+    font-size: 0.75rem;
+  }
+
+  .portfolio-item button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-container {
+    padding: 40px 10px;
+  }
+
+  .portfolio-header-below {
+    font-size: 3rem;
+    top: -30px;
+  }
+
+  .portfolio-header-top {
+    font-size: 1.25rem;
+  }
+
+  .portfolio-header-top::after {
+    width: 40px;
+    height: 2px;
+  }
+
+  .portfolio-items {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .portfolio-item {
+    width: 100%;
+  }
+
+  .portfolio-item h3 {
+    font-size: 16px;
+  }
+
+  .portfolio-item p {
+    font-size: 0.7rem;
+  }
+
+  .portfolio-item button {
+    font-size: 11px;
+  }
+}

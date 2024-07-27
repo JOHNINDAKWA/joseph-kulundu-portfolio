@@ -1,0 +1,19 @@
+.home-container {
+  display: flex;
+  /* height: 100vh;  */
+  overflow: hidden; 
+}
+
+.main-content {
+  margin-left: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    margin-left: 260px; 
+  }
+}
