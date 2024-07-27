@@ -43,16 +43,18 @@ const Modal = ({ isOpen, onClose, item }) => {
 
             <div className="socials">
               <p>Share</p>
-              <div className="socil-icons">
-                <FaFacebook />
+              <div className="social-icons">
+                <FaFacebook className="facebook"/>
 
-                <FaSquareXTwitter />
+                <FaSquareXTwitter className="twitter"/>
 
-                <FaLinkedin />
+                <FaLinkedin className="linkedin"/>
 
-                <FaInstagramSquare />
+                <FaInstagramSquare className="instagram"/>
               </div>
             </div>
+
+            
           </>
         )}
       </div>

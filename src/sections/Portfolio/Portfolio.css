@@ -38,12 +38,24 @@
 .portfolio-header-top::after {
   content: '';
   display: block;
-  width: 80px;
+  width: 0;
   height: 4px;
-  background-color: #ffc107;
-  margin: 10px auto; 
+  background: linear-gradient(to right, #111418, #ffc107); 
+  margin: 0 auto;
+  animation: growShrinkLine 4s infinite;
 }
 
+@keyframes growShrinkLine {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
 .portfolio-two{
   margin: 100px 0;
 }
@@ -103,36 +115,46 @@
   text-overflow: ellipsis;
 }
 
+/* Button Style */
 .portfolio-item button {
   color: #ffc107;
   font-size: 14px;
   text-decoration: none;
   font-weight: 400;
   position: relative;
-  border: none;
+  border: 1px solid #ffc107;
   background-color: transparent;
-  transition: color 0.3s ease;
+  padding: 5px 15px;
+  overflow: hidden;
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-.portfolio-item button::after {
+.portfolio-item button::before {
   content: '';
   display: block;
-  width: 0;
-  height: 2px;
-  background: #ffc107;
-  transition: width 0.3s;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 193, 7, 0.2);
   position: absolute;
-  bottom: -2px;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: width 0.3s ease, height 0.3s ease;
+  z-index: -1;
+}
+
+/* Hover Effect */
+.portfolio-item button:hover::before {
+  width: 300%;
+  height: 300%;
 }
 
 .portfolio-item button:hover {
   color: #111418;
+  border-color: #ffc107;
+  box-shadow: 0 0 10px #ffc107, 0 0 20px #ffc107, 0 0 30px #ffc107;
 }
 
-.portfolio-item button:hover::after {
-  width: 100%;
-}
 @media (max-width: 1400px) {
   .portfolio-container {
     padding: 100px 50px; 
@@ -203,7 +225,7 @@
   }
 
   .portfolio-item {
-    width: calc(50% - 20px);
+    width: calc(50% - 30px);
   }
 
   .portfolio-item h3 {

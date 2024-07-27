@@ -63,12 +63,12 @@ nav {
 
 .nav-middle ul li a:hover {
   color: #ffc107;
-  box-shadow: 0 0 8px #ffc107;
+  
+  border-bottom: 2px solid #ffc107;
 }
 
 .nav-middle ul li a.active {
   color: #ffc107;
-  border-bottom: 2px solid #ffc107;
   box-shadow: 0 0 8px #ffc107;
 }
 

@@ -40,12 +40,24 @@
   .resume-header-top::after {
     content: '';
     display: block;
-    width: 80px;
+    width: 0;
     height: 4px;
-    background-color: #ffc107;
-    margin: 10px auto; 
+    background: linear-gradient(to right, #111418, #ffc107); 
+    margin: 0 auto;
+    animation: growShrinkLine 4s infinite;
   }
   
+  @keyframes growShrinkLine {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100px;
+    }
+    100% {
+      width: 0;
+    }
+  }
  
   .awards {
     display: flex;

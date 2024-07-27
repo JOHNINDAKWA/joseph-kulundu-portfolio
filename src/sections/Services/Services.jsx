@@ -1,5 +1,8 @@
 import { IoIosColorFilter } from "react-icons/io";
 import "./Services.css";
+import { AiFillOpenAI, AiOutlineRuby, AiOutlineSlack } from "react-icons/ai";
+import { TiWeatherWindyCloudy } from "react-icons/ti";
+import { GiCyberEye } from "react-icons/gi";
 
 const Services = () => {
   return (
@@ -22,7 +25,7 @@ const Services = () => {
 
         <div className="service-item">
           <div className="service-icon">
-            <IoIosColorFilter />
+          <AiOutlineRuby />
           </div>
           <div className="service-content">
             <h2>Machine Learning</h2>
@@ -32,7 +35,7 @@ const Services = () => {
 
         <div className="service-item">
           <div className="service-icon">
-            <IoIosColorFilter />
+          <AiFillOpenAI />
           </div>
           <div className="service-content">
             <h2>ITSM</h2>
@@ -42,7 +45,8 @@ const Services = () => {
 
         <div className="service-item">
           <div className="service-icon">
-            <IoIosColorFilter />
+          <TiWeatherWindyCloudy />
+       
           </div>
           <div className="service-content">
             <h2>Cloud Solutions</h2>
@@ -52,7 +56,7 @@ const Services = () => {
 
         <div className="service-item">
           <div className="service-icon">
-            <IoIosColorFilter />
+          <GiCyberEye />
           </div>
           <div className="service-content">
             <h2>Cybersecurity</h2>
@@ -62,7 +66,8 @@ const Services = () => {
 
         <div className="service-item">
           <div className="service-icon">
-            <IoIosColorFilter />
+            
+          <AiOutlineSlack />
           </div>
           <div className="service-content">
             <h2>Data Visualization</h2>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { MdOutlineKeyboardDoubleArrowUp } from 'react-icons/md';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -16,6 +17,15 @@ const Footer = () => {
       <div className="footer-copy">
         <p>Copyright © 2024 @kulundujoseph. All Rights Reserved.</p>
       </div>
+      <a
+        href="https://wa.me/+254790648219"  
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-button"
+        title="Chat with us on WhatsApp"
+      >
+        <FaWhatsapp />
+      </a>
       <button className="back-to-top" onClick={scrollToTop}>
         <MdOutlineKeyboardDoubleArrowUp />
       </button>

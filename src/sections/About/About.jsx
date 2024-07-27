@@ -12,18 +12,18 @@ const About = () => {
         <div className="about-content-left">
           <h3>
             I'm <span className="color-orange">Joseph Kulundu,</span> a Data
-            Scientist{" "}
+            Scientist, ITSM Specialist, and Tech Enthusiast
           </h3>
           <p>
-            I help you build brand for your business at an affordable price.
-            Thousands of clients have procured exceptional results while working
-            with our dedicated team. when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book.
+            I leverage my expertise in data science to unlock insights and drive
+            innovation for your business. My passion for ITSM ensures seamless
+            management of technology solutions tailored to your needs.
           </p>
           <p>
-            Delivering work within time and budget which meets client’s
-            requirements is our moto. Lorem Ipsum has been the industry's
-            standard dummy text ever when an unknown printer took a galley.
+            As a tech enthusiast, I stay ahead of industry trends to deliver
+            cutting-edge solutions. My goal is to provide exceptional results
+            that exceed client expectations while staying within budget and
+            timeline.
           </p>
         </div>
 
@@ -70,8 +70,6 @@ const About = () => {
           </li>
         </ul>
       </div>
-
-
     </section>
   );
 };

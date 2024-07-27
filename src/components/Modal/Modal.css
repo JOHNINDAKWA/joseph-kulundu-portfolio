@@ -101,21 +101,43 @@
   color: #111418;
 }
 
-.socil-icons {
+.social-icons {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
-.socil-icons svg {
-  font-size: 24px;
-  color: #555;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
+
 
 .socil-icons svg:hover {
   color: #111418;
 }
+
+
+.facebook{
+  font-size: 20px;
+  transition: color 0.3s ease;
+  color: #3b5998; 
+}
+
+.twitter{
+  font-size: 20px;
+  transition: color 0.3s ease;
+  color: #1da1f2; 
+}
+
+.linkedin{
+  font-size: 20px;
+  transition: color 0.3s ease;
+  color: #0077b5; 
+}
+
+.instagram{
+  font-size: 20px;
+  transition: color 0.3s ease;
+  color: #e4405f; 
+ 
+}
+
 
 /* Media Queries */
 @media (max-width: 768px) {

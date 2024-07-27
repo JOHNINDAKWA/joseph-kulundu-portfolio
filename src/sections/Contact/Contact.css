@@ -39,12 +39,24 @@
   .contact-header-top::after {
     content: '';
     display: block;
-    width: 80px;
+    width: 0;
     height: 4px;
-    background-color: #ffc107;
-    margin: 10px auto; 
+    background: linear-gradient(to right, #111418, #ffc107); 
+    margin: 0 auto;
+    animation: growShrinkLine 4s infinite;
   }
-
+  
+  @keyframes growShrinkLine {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100px;
+    }
+    100% {
+      width: 0;
+    }
+  }
 
 
   .contact-desc {
@@ -122,7 +134,8 @@
   
   .contact-details-right button {
     width: 100%;
-    color: #cb9900;
+    color: #000;
+    background: #ffc107;
     margin: auto;
     padding: 1rem 2.8rem;
 
@@ -130,6 +143,7 @@
   
   .contact-details-right button:hover {
     color: #000;
+    background: transparent;
   }
   
 
