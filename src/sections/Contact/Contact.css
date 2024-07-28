@@ -14,10 +14,10 @@
   }
   
   .contact-header-below {
-    font-size: 8.25rem;
+    font-size: 5.25rem;
     color: rgb(202, 204, 204) !important;
     position: absolute;
-    top: -65px;
+    top: -30px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;

@@ -11,6 +11,7 @@ import Skills from '../Skills/Skills';
 import Expereince from '../Experience/Expereince';
 import Contact from '../Contact/Contact';
 import Navbar from '../../components/Navbar/Navbar';
+import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
         <Skills/>
         <Expereince/>
         <Portfolio />
+        <Testimonial/>
         <Contact/>
         <Footer />
       </div>

@@ -12,10 +12,10 @@
   }
   
   .skills-header-below {
-    font-size: 8.25rem;
+    font-size: 6.25rem;
     color: rgb(202, 204, 204) !important;
     position: absolute;
-    top: -65px;
+    top: -45px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
