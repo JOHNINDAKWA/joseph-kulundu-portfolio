@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <section className="header" id='home'>
       <div className="overlay">
-        <h4>Nice to Meet You.🙋</h4>
+        <h4>Nice to Meet You.</h4>
         <h1 className="animated-text">{currentText}</h1>
         <p>I am based in Nairobi, Kenya - East Africa.</p>
         <div className="buttons">
